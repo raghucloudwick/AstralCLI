@@ -1,0 +1,327 @@
+.adp-button {
+  @apply adp-flex adp-items-center adp-justify-center adp-rounded adp-ease-in-out adp-duration-300 adp-w-fit disabled:adp-cursor-not-allowed;
+  @apply adp-outline-none focus:adp-transition-none;
+
+  &-xs,
+  &-sm,
+  &-md,
+  &-lg {
+    @apply adp-gap-2;
+  }
+
+  &-xs {
+    @apply adp-p-2 adp-text-xs;
+
+    &--padded {
+      @apply adp-px-3 adp-py-2;
+    }
+  }
+
+  &-sm {
+    @apply adp-p-2.5 adp-text-base;
+
+    &--padded {
+      @apply adp-px-5 adp-py-2;
+    }
+  }
+
+  &-md {
+    @apply adp-p-2.5 adp-text-md;
+
+    &--padded {
+      @apply adp-px-6 adp-py-2;
+    }
+  }
+
+  &-lg {
+    @apply adp-p-3.5 adp-text-md;
+
+    &--padded {
+      @apply adp-px-[28px] adp-py-3;
+    }
+  }
+
+  &-xl {
+    @apply adp-p-[18px] adp-text-lg;
+
+    &--padded {
+      @apply adp-gap-3 adp-px-7 adp-py-4;
+    }
+  }
+
+  &-primary {
+    @apply adp-text-primary-500;
+    @apply hover:adp-text-primary-700;
+    @apply focus-visible:adp-text-primary-400;
+    @apply disabled:adp-text-primary-200;
+
+    &--filled {
+      @apply adp-text-white adp-bg-primary-500;
+      @apply hover:adp-bg-primary-700 hover:adp-text-white;
+      @apply focus-visible:adp-text-white focus-visible:adp-bg-primary-400 active:adp-bg-primary-500;
+      @apply disabled:adp-bg-primary-200 disabled:adp-text-white;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#99CBFA] focus-visible:active:adp-bg-primary-500;
+
+      /* dark mode */
+      @apply dark:adp-text-iridium dark:adp-bg-primary-400 dark:hover:adp-bg-primary-300 dark:active:adp-bg-primary-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#99CBFA] dark:focus-visible:active:adp-bg-primary-300;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--outline {
+      @apply adp-bg-transparent adp-border adp-border-primary-500;
+      @apply hover:adp-bg-primary-100 hover:adp-border-primary-700;
+      @apply focus-visible:adp-bg-primary-50 focus-visible:adp-border-primary-500 active:adp-bg-transparent;
+      @apply disabled:adp-border-primary-200 disabled:hover:adp-bg-secondary-50;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#99CBFA] focus-visible:active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-primary-400 dark:adp-border-primary-400 dark:adp-bg-transparent dark:hover:adp-border-primary-300 dark:hover:adp-text-primary-300 dark:active:adp-text-primary-400 dark:active:adp-border-primary-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#99CBFA] dark:focus-visible:adp-border-primary-300 dark:focus-visible:adp-text-primary-300 dark:focus-visible:active:adp-text-primary-400 dark:focus-visible:active:adp-border-primary-400;
+      @apply dark:disabled:adp-border-none dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--shade {
+      @apply adp-bg-transparent;
+      @apply hover:adp-bg-primary-100;
+      @apply focus-visible:adp-bg-primary-50 active:adp-bg-transparent;
+      @apply disabled:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-primary-400 dark:hover:adp-bg-primary-300 dark:hover:adp-text-iridium dark:active:adp-bg-transparent dark:active:adp-text-primary-400;
+      @apply dark:focus-visible:adp-bg-primary-200 dark:focus-visible:adp-text-iridium dark:focus-visible:active:adp-bg-transparent dark:focus-visible:active:adp-text-primary-400;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--text {
+      @apply active:adp-text-primary-500 !adp-p-0;
+      @apply dark:adp-text-primary-400 dark:hover:adp-text-primary-300 dark:active:adp-text-primary-500 dark:focus-visible:adp-text-primary-200;
+      @apply dark:disabled:adp-text-secondary-400;
+    }
+  }
+
+  &-secondary {
+    @apply adp-text-secondary-500;
+    @apply focus-visible:adp-text-secondary-400;
+
+    &--filled {
+      @apply adp-bg-gray-100;
+      @apply hover:adp-bg-gray-300 focus-visible:adp-bg-gray-200 active:adp-bg-gray-100;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-gray-100 focus-visible:active:adp-bg-gray-100;
+
+      /* dark mode */
+      @apply dark:adp-text-secondary-50 dark:adp-bg-secondary-800 dark:hover:adp-bg-secondary-700 dark:active:adp-bg-secondary-800;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-secondary-600 dark:focus-visible:active:adp-bg-secondary-700;
+    }
+
+    &--outline {
+      @apply adp-bg-transparent adp-border adp-border-gray-300;
+      @apply hover:adp-bg-gray-100 focus-visible:adp-bg-gray-50 active:adp-bg-transparent;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-gray-200 focus-visible:active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-secondary-50 dark:adp-bg-transparent dark:adp-border-secondary-50 dark:hover:adp-text-secondary-100 dark:active:adp-text-secondary-50 dark:active:adp-border-secondary-800;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-secondary-50 dark:focus-visible:adp-border-secondary-600 dark:focus-visible:adp-text-secondary-200 dark:focus-visible:active:adp-text-secondary-50 dark:focus-visible:active:adp-border-secondary-800;
+    }
+
+    &--shade {
+      @apply adp-bg-transparent;
+      @apply hover:adp-bg-gray-100 focus-visible:adp-bg-gray-50 active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-secondary-50 dark:hover:adp-bg-secondary-700 dark:hover:adp-text-secondary-100 dark:active:adp-bg-transparent dark:active:adp-text-secondary-50;
+      @apply dark:focus-visible:adp-bg-secondary-600 dark:focus-visible:adp-text-secondary-200 dark:focus-visible:active:adp-bg-transparent dark:focus-visible:active:adp-text-secondary-50;
+    }
+
+    &--text {
+      @apply adp-p-0;
+      @apply active:adp-text-secondary-500;
+      @apply dark:adp-text-secondary-50 dark:hover:adp-text-secondary-100 dark:active:adp-text-secondary-50 dark:focus-visible:adp-text-secondary-200;
+    }
+  }
+
+  &-success {
+    @apply adp-text-success-500;
+    @apply hover:adp-text-success-700;
+    @apply focus-visible:adp-text-success-400;
+    @apply disabled:adp-text-success-200;
+
+    &--filled {
+      @apply adp-text-white adp-bg-success-500;
+      @apply hover:adp-bg-success-700 hover:adp-text-white;
+      @apply focus-visible:adp-text-white focus-visible:adp-bg-success-400 active:adp-bg-success-500;
+      @apply disabled:adp-bg-success-200 disabled:adp-text-white;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#A3D6C9] focus-visible:active:adp-bg-success-500;
+
+      /* dark mode */
+      @apply dark:adp-text-iridium dark:adp-bg-success-400 dark:hover:adp-bg-success-300 dark:active:adp-bg-success-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#A3D6C9] dark:focus-visible:active:adp-bg-success-300;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--outline {
+      @apply adp-bg-transparent adp-border adp-border-success-500;
+      @apply hover:adp-bg-success-100 hover:adp-border-success-700 active:adp-bg-transparent;
+      @apply focus-visible:adp-bg-success-50 focus-visible:adp-border-success-500;
+      @apply disabled:adp-border-success-200;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#A3D6C9] focus-visible:active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-success-400 dark:adp-bg-transparent dark:adp-border-success-400 dark:hover:adp-border-success-300 dark:hover:adp-text-success-300 dark:active:adp-text-success-400 dark:active:adp-border-success-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#A3D6C9] dark:focus-visible:adp-border-success-200 dark:focus-visible:adp-text-success-200 dark:focus-visible:active:adp-text-success-400 dark:focus-visible:active:adp-border-success-400;
+      @apply dark:disabled:adp-border-none dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--shade {
+      @apply adp-bg-transparent;
+      @apply hover:adp-bg-success-100;
+      @apply focus-visible:adp-bg-success-50 active:adp-bg-transparent;
+      @apply disabled:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-success-400 dark:hover:adp-bg-success-300 dark:hover:adp-text-iridium dark:active:adp-bg-transparent dark:active:adp-text-success-400;
+      @apply dark:focus-visible:adp-bg-success-200 dark:focus-visible:adp-text-iridium dark:focus-visible:active:adp-bg-transparent dark:focus-visible:active:adp-text-success-400;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--text {
+      @apply active:adp-text-success-500 !adp-p-0;
+      @apply dark:adp-text-success-400 dark:hover:adp-text-success-300 dark:active:adp-text-success-400 dark:focus-visible:adp-text-success-200;
+      @apply dark:disabled:adp-text-secondary-400;
+    }
+  }
+
+  &-warning {
+    @apply adp-text-warning-500;
+    @apply hover:adp-text-warning-700;
+    @apply focus-visible:adp-text-warning-400;
+    @apply disabled:adp-text-warning-200;
+
+    &--filled {
+      @apply adp-text-white adp-bg-warning-500;
+      @apply hover:adp-bg-warning-700 hover:adp-text-white;
+      @apply focus-visible:adp-text-white focus-visible:adp-bg-warning-400 active:adp-bg-warning-500;
+      @apply disabled:adp-bg-warning-200 disabled:adp-text-white;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#FBD29C] focus-visible:active:adp-bg-warning-500;
+
+      /* dark mode */
+      @apply dark:adp-text-iridium dark:adp-bg-warning-400 dark:hover:adp-bg-warning-300 dark:active:adp-bg-warning-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#FBD29C] dark:focus-visible:active:adp-bg-warning-300;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--outline {
+      @apply adp-bg-transparent adp-border adp-border-warning-500;
+      @apply hover:adp-bg-warning-100 hover:adp-border-warning-700;
+      @apply focus-visible:adp-bg-warning-50 focus-visible:adp-border-warning-50 active:adp-bg-transparent;
+      @apply disabled:adp-border-warning-200;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#FBD29C] focus-visible:active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-warning-400 dark:adp-bg-transparent dark:adp-border-warning-400 dark:hover:adp-border-warning-300 dark:hover:adp-text-warning-300 dark:active:adp-text-warning-400 dark:active:adp-border-warning-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#FBD29C] dark:focus-visible:adp-border-warning-300 dark:focus-visible:adp-text-warning-300 dark:focus-visible:active:adp-text-warning-400 dark:focus-visible:active:adp-border-warning-400;
+      @apply dark:disabled:adp-border-none dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--shade {
+      @apply adp-bg-transparent;
+      @apply hover:adp-bg-warning-100;
+      @apply focus-visible:adp-bg-warning-100 active:adp-bg-transparent;
+      @apply disabled:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-warning-400 dark:hover:adp-bg-warning-300 dark:hover:adp-text-iridium dark:active:adp-bg-transparent dark:active:adp-text-warning-400;
+      @apply dark:focus-visible:adp-bg-warning-200 dark:focus-visible:adp-text-iridium dark:focus-visible:active:adp-bg-transparent dark:focus-visible:active:adp-text-warning-400;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--text {
+      @apply active:adp-text-warning-500 !adp-p-0;
+      @apply dark:adp-text-warning-400 dark:hover:adp-text-warning-300 dark:active:adp-text-warning-400 dark:focus-visible:adp-text-warning-200;
+      @apply dark:disabled:adp-text-secondary-400;
+    }
+  }
+
+  &-error {
+    @apply adp-text-error-500;
+    @apply hover:adp-text-error-700;
+    @apply focus-visible:adp-text-error-400;
+    @apply disabled:adp-text-error-200;
+
+    &--filled {
+      @apply adp-text-white adp-bg-error-500;
+      @apply hover:adp-bg-error-700 hover:adp-text-white;
+      @apply focus-visible:adp-text-white focus-visible:adp-bg-error-400 active:adp-bg-error-500;
+      @apply disabled:adp-bg-error-200 disabled:adp-text-white;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#F1AE9D] focus-visible:active:adp-bg-error-500;
+
+      /* dark mode */
+      @apply dark:adp-text-iridium dark:adp-bg-error-400 dark:hover:adp-bg-error-300 dark:active:adp-bg-error-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#F1AE9D] dark:focus-visible:active:adp-bg-error-300;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--outline {
+      @apply adp-bg-transparent adp-border adp-border-error-500;
+      @apply hover:adp-bg-error-100 hover:adp-border-error-700;
+      @apply focus-visible:adp-bg-error-50 focus-visible:adp-border-error-500 active:adp-bg-transparent;
+      @apply disabled:adp-border-error-200;
+      @apply focus-visible:adp-ring focus-visible:adp-ring-[#F1AE9D] focus-visible:active:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-error-400 dark:adp-bg-transparent dark:adp-border-error-400 dark:hover:adp-border-error-300 dark:hover:adp-text-error-300 dark:active:adp-text-error-400 dark:active:adp-border-error-400;
+      @apply dark:focus-visible:adp-ring dark:focus-visible:adp-ring-[#F1AE9D] dark:focus-visible:adp-border-error-300 dark:focus-visible:adp-text-error-300 dark:focus-visible:active:adp-text-error-400 dark:focus-visible:active:adp-border-error-400;
+      @apply dark:disabled:adp-border-none dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--shade {
+      @apply adp-bg-transparent;
+      @apply hover:adp-bg-error-100;
+      @apply focus-visible:adp-bg-error-50 active:adp-bg-transparent;
+      @apply disabled:adp-bg-transparent;
+
+      /* dark mode */
+      @apply dark:adp-text-error-400 dark:hover:adp-bg-error-300 dark:hover:adp-text-iridium dark:active:adp-bg-transparent dark:active:adp-text-error-400;
+      @apply dark:focus-visible:adp-bg-error-200 dark:focus-visible:adp-text-iridium dark:focus-visible:active:adp-bg-transparent dark:focus-visible:active:adp-text-error-400;
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--text {
+      @apply active:adp-text-error-500 !adp-p-0;
+      @apply dark:adp-text-error-400 dark:hover:adp-text-error-300 dark:active:adp-text-error-400 dark:focus-visible:adp-text-error-200;
+      @apply dark:disabled:adp-text-secondary-400;
+    }
+  }
+
+  &-primary,
+  &-secondary,
+  &-success,
+  &-warning,
+  &-error {
+    @apply disabled:adp-text-secondary-300;
+
+    &--filled {
+      @apply disabled:adp-bg-gray-100;
+
+      /* dark mode */
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--outline {
+      @apply disabled:adp-border-gray-200;
+
+      /* dark mode */
+      @apply dark:disabled:adp-border-none dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--shade {
+      /* dark mode */
+      @apply dark:disabled:adp-bg-secondary-600 dark:disabled:adp-text-secondary-400;
+    }
+
+    &--text {
+      @apply disabled:adp-text-secondary-200;
+      @apply dark:disabled:adp-text-secondary-400;
+    }
+  }
+}

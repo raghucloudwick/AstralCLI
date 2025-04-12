@@ -1,0 +1,105 @@
+.astral-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.astral-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.astral-button-sm {
+  height: 2rem;
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+}
+
+.astral-button-md {
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.astral-button-lg {
+  height: 3rem;
+  padding: 0 1.5rem;
+  font-size: 1.125rem;
+}
+
+/* Variants */
+.astral-button-primary {
+  background-color: #3b82f6;
+  color: white;
+  border: 1px solid #3b82f6;
+}
+
+.astral-button-primary:hover:not(:disabled) {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.astral-button-secondary {
+  background-color: #4b5563;
+  color: white;
+  border: 1px solid #4b5563;
+}
+
+.astral-button-secondary:hover:not(:disabled) {
+  background-color: #374151;
+  border-color: #374151;
+}
+
+.astral-button-outline {
+  background-color: transparent;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+}
+
+.astral-button-outline:hover:not(:disabled) {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.astral-button-ghost {
+  background-color: transparent;
+  color: #4b5563;
+  border: 1px solid transparent;
+}
+
+.astral-button-ghost:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
+
+/* Full width */
+.astral-button-full-width {
+  width: 100%;
+}
+
+/* Loading state */
+.astral-button-loading {
+  color: transparent;
+}
+
+.astral-button-spinner {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} 

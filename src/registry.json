@@ -1,0 +1,341 @@
+{
+  "components": {
+    "accordion": {
+      "name": "Accordion",
+      "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "files": [
+        "index.tsx",
+        "accordion.styles.css"
+      ],
+      "dependencies": ["clsx"],
+      "path": "accordion"
+    },
+    "adpicon": {
+      "name": "ADPIcon",
+      "description": "Icon component used throughout the Astral UI system.",
+      "files": [
+        "adpicon/index.tsx",
+        "adpicon/adpicon.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "avatar": {
+      "name": "Avatar",
+      "description": "Displays user or entity profile images or initials.",
+      "files": [
+        "avatar/index.tsx",
+        "avatar/avatar.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "avatargroup": {
+      "name": "AvatarGroup",
+      "description": "Displays a stack of avatars to represent a group of users.",
+      "files": [
+        "avatargroup/index.tsx",
+        "avatargroup/avatargroup.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "badge": {
+      "name": "Badge",
+      "description": "Small status descriptors for UI elements.",
+      "files": [
+        "badge/index.tsx",
+        "badge/badge.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "breadcrumbs": {
+      "name": "Breadcrumbs",
+      "description": "Navigation aid that helps users track their location within the application.",
+      "files": [
+        "breadcrumbs/index.tsx",
+        "breadcrumbs/breadcrumbs.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "button": {
+      "name": "Button",
+      "description": "Primary button component for user interactions.",
+      "files": [
+        "index.tsx",
+        "button.styles.css"
+      ],
+      "dependencies": ["clsx", "react-merge-refs", "@floating-ui/react"],
+      "path": "button"
+    },
+    "card": {
+      "name": "Card",
+      "description": "Flexible container for grouping and displaying content.",
+      "files": [
+        "card/index.tsx",
+        "card/card.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "checkbox": {
+      "name": "Checkbox",
+      "description": "Form control that allows selecting one or more options.",
+      "files": [
+        "checkbox/index.tsx",
+        "checkbox/checkbox.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "checkboxgroup": {
+      "name": "CheckboxGroup",
+      "description": "Container for multiple related checkbox components.",
+      "files": [
+        "checkboxgroup/index.tsx",
+        "checkboxgroup/checkboxgroup.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "ctagroup": {
+      "name": "CTAGroup",
+      "description": "Group of call-to-action buttons arranged in a standardized layout.",
+      "files": [
+        "ctagroup/index.tsx",
+        "ctagroup/ctagroup.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "datatable": {
+      "name": "DataTable",
+      "description": "Component for displaying data in a tabular format with sorting and filtering capabilities.",
+      "files": [
+        "index.tsx",
+        "datatable.styles.css",
+        "tableHeader.tsx",
+        "tableBody.tsx",
+        "tablePagination.tsx",
+        "tableUtils.ts"
+      ],
+      "dependencies": ["clsx", "@tanstack/react-table", "@tanstack/react-virtual"],
+      "path": "datatable"
+    },
+    "datepicker": {
+      "name": "DatePicker",
+      "description": "Form component for selecting dates from a calendar interface.",
+      "files": [
+        "datepicker/index.tsx",
+        "datepicker/datepicker.styles.css",
+        "datepicker/calendar.tsx",
+        "datepicker/dateUtils.ts"
+      ],
+      "dependencies": ["clsx", "react-datepicker"]
+    },
+    "dropdown": {
+      "name": "Dropdown",
+      "description": "Menu that appears below a trigger element with a list of selectable options.",
+      "files": [
+        "dropdown/index.tsx",
+        "dropdown/dropdown.styles.css"
+      ],
+      "dependencies": ["clsx", "@floating-ui/react"]
+    },
+    "emptystate": {
+      "name": "EmptyState",
+      "description": "Placeholder component displayed when no data is available.",
+      "files": [
+        "emptystate/index.tsx",
+        "emptystate/emptystate.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "fileupload": {
+      "name": "FileUpload",
+      "description": "Component for uploading files with drag-and-drop support.",
+      "files": [
+        "fileupload/index.tsx",
+        "fileupload/fileupload.styles.css",
+        "fileupload/dropzone.tsx"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "loader": {
+      "name": "Loader",
+      "description": "Loading indicator component for asynchronous operations.",
+      "files": [
+        "loader/index.tsx",
+        "loader/loader.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "modal": {
+      "name": "Modal",
+      "description": "Dialog box that overlays the main content and requires user interaction.",
+      "files": [
+        "index.tsx",
+        "modal.styles.css"
+      ],
+      "dependencies": ["clsx", "react-focus-on"],
+      "path": "modal"
+    },
+    "otpinput": {
+      "name": "OtpInput",
+      "description": "Input component for one-time passwords or verification codes.",
+      "files": [
+        "otpinput/index.tsx",
+        "otpinput/otpinput.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "pagination": {
+      "name": "Pagination",
+      "description": "Controls for navigating through paginated content.",
+      "files": [
+        "pagination/index.tsx",
+        "pagination/pagination.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "panel": {
+      "name": "Panel",
+      "description": "Container component for organizing content into distinct sections.",
+      "files": [
+        "panel/index.tsx",
+        "panel/panel.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "panelgroup": {
+      "name": "PanelGroup",
+      "description": "Container for multiple related panel components.",
+      "files": [
+        "panelgroup/index.tsx",
+        "panelgroup/panelgroup.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "passwordfield": {
+      "name": "PasswordField",
+      "description": "Input field for password entry with show/hide functionality.",
+      "files": [
+        "passwordfield/index.tsx",
+        "passwordfield/passwordfield.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "progress": {
+      "name": "Progress",
+      "description": "Visual indicator of progress for operations or processes.",
+      "files": [
+        "progress/index.tsx",
+        "progress/progress.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "radio": {
+      "name": "Radio",
+      "description": "Form control for selecting a single option from a set.",
+      "files": [
+        "radio/index.tsx",
+        "radio/radio.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "radiogroup": {
+      "name": "RadioGroup",
+      "description": "Container for multiple related radio button components.",
+      "files": [
+        "radiogroup/index.tsx",
+        "radiogroup/radiogroup.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "scrollbar": {
+      "name": "Scrollbar",
+      "description": "Custom scrollbar component with enhanced styling and behavior.",
+      "files": [
+        "scrollbar/index.tsx",
+        "scrollbar/scrollbar.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "select": {
+      "name": "Select",
+      "description": "Dropdown input for selecting from multiple options.",
+      "files": [
+        "index.tsx",
+        "select.styles.css"
+      ],
+      "dependencies": ["clsx", "react-select"],
+      "path": "select"
+    },
+    "tabs": {
+      "name": "Tabs",
+      "description": "Interface for switching between different content views.",
+      "files": [
+        "tabs/index.tsx",
+        "tabs/tabs.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "textcopy": {
+      "name": "TextCopy",
+      "description": "Component that allows copying text to clipboard.",
+      "files": [
+        "textcopy/index.tsx",
+        "textcopy/textcopy.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "textfield": {
+      "name": "TextField",
+      "description": "Input component for text entry.",
+      "files": [
+        "textfield/index.tsx",
+        "textfield/textfield.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "textarea": {
+      "name": "Textarea",
+      "description": "Multi-line text input component.",
+      "files": [
+        "textarea/index.tsx",
+        "textarea/textarea.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "toast": {
+      "name": "Toast",
+      "description": "Temporary notification component for user feedback.",
+      "files": [
+        "toast/index.tsx",
+        "toast/toast.styles.css",
+        "toast/toastContainer.tsx"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "toggle": {
+      "name": "Toggle",
+      "description": "Switch component for toggling between two states.",
+      "files": [
+        "toggle/index.tsx",
+        "toggle/toggle.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    },
+    "tooltip": {
+      "name": "Tooltip",
+      "description": "Component that shows additional information on hover.",
+      "files": [
+        "tooltip/index.tsx",
+        "tooltip/tooltip.styles.css"
+      ],
+      "dependencies": ["clsx", "@floating-ui/react"]
+    },
+    "truncate": {
+      "name": "Truncate",
+      "description": "Component that truncates text with ellipsis when it exceeds available space.",
+      "files": [
+        "truncate/index.tsx",
+        "truncate/truncate.styles.css"
+      ],
+      "dependencies": ["clsx"]
+    }
+  }
+} 
